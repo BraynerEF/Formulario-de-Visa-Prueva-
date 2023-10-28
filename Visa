@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Visa</title>
+</head>
+<style>
+  body {
+            background-color: #ede2e28f;
+            font-family: Arial, sans-serif;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<body>
+    <h1><u>Formulario de Solicitud de Visa</u></h1><br>
+    <form id="miFormulario">
+        <label for="nombre">Nombre :</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="nombre">Primer Apellido:</label>
+        <input type="text" id="apellido1" name="apellido1"><br>
+
+        <label for="nombre">Segundo Apellido, en caso de terner:</label>
+        <input type="text" id="apellido2" name="apellido2"><br>
+
+        <label for="nombre">Dirreccion:</label>
+        <input type="text" id="Dire" name="Dire"><br>
+
+        <label for="nombre">Correo:</label>
+        <input type="text" id="GM" name="GM"><br>
+
+        <label for="nombre">Nacionalidad:</label>
+        <input type="text" id="patria" name="patria"><br>
+
+        <label for="contrasena">Campo de Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena"><br>
+
+        <label for="area1">Propósito de su viaje a Estados Unidos:</label><br>
+        <textarea id="area1" name="area1"></textarea><br>
+
+        <label for="area2">¿Cuál es su situación financiera?:</label><br>
+        <textarea id="area2" name="area2"></textarea><br>
+
+        <label for="lista">Tipo de Solicitud:</label>
+        <select id="lista" name="lista">
+            <option value="Opción 1">Visa de Trabajo</option>
+            <option value="Opción 2">Visa de Turismo</option>
+            <option value="Opción 3">Residencia</option>
+        </select><br>
+
+        <br><label>Sexo:</label>
+        <label for="radio1">Masculino</label>
+        <input type="radio" id="g1" name="radio" value="Opcion 1">
+        <label for="radio2">Femenino</label>
+        <input type="radio" id="g2" name="radio" value="Opcion 2"><br>
+        
+        <label>Acepta los términos y condiciones:</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="Acepto los términos y condiciones"><br>
+        
+
+
+        <button type="button" id="botonAceptar" onclick="ProcesarFormulario()">Aceptar</button>
+    </form>
+
+    <script>
+        function ProcesarFormulario() {
+            alert("Formulario Procesado");
+        }
+    </script>
+</body>
+</html>
